@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/spaceout.css" />
+</head>
+
+<body>
+    <div class="modal fade" id="Gameover" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle"> Game Over!</h3>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5> Your Final Score: <span id="score"></span></h5>
+                        </div>
+                    </div>
+                    </br>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <input type="text" id="usernameTextbox" class="form-control" placeholder="Username" aria-label="Username">
+                        </div>
+                    </div>
+                    </br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Created a username that will be remembered in your browser. Any subsequent submissions will be updated for the chosen name. Your old score if any will be overwritten once submitted.
+                            </p>
+                        </div>
+
+                    </div>
+                    </br>
+                    <span id="sendScoreResponse" style="color:red"></span>
+                </div>
+                <div class="modal-footer">
+
+
+                    <button type="button" id="SendScore" class="btn btn-secondary col-md-4 offset-md-4">Send Score</button>
+                    <span class="col-md-4"></span>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="Shop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle"><span id="currGold"></span> Gold for Upgrades</h3>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5>Upgrade</b></div>
+                        <div class="col-md-4">
+                            <h5>Cost</b></div>
+
+                    </div></br>
+                    <div class="row">
+                        <div class="col-md-4">+Fire Rate</div>
+                        <div class="col-md-4"><span id="fireRateCost"></span></div>
+                        <div class="col-md-4">
+                            <button id="buyRate" type="button" class="btn btn-warning">Buy</button>
+                        </div>
+                    </div></br>
+                    <div class="row">
+                        <div class="col-md-4">+5 Life</div>
+                        <div class="col-md-4"><span id="lifeCost"></span></div>
+                        <div class="col-md-4">
+                            <button id="buyLife" type="button" class="btn btn-warning">Buy</button>
+                        </div>
+                    </div>
+                    </br>
+                    <div class="row">
+                        <div class="col-md-4">+1 Barrel</div>
+                        <div class="col-md-4"><span id="double-barrels"></span><span id="gunBarrelCost"></span></div>
+                        <div class="col-md-4">
+                            <button id="buydoublebarrels" type="button" class="btn btn-warning">Buy</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="container" class="container-fluid">
+        <div class="row">
+            <canvas id="canvas" class="col-md-8"> </canvas>
+            <div class="col-md-4 p-0">
+                <table id="HighscoresTable" class="table table-dark" >
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="4">Highscores</th>
+
+                        </tr>
+                        <tr>
+                            <!-- <th scope="col">#</th> -->
+                            <th scope="col">Username</th>
+                            <th scope="col">Score</th>
+                            <th scope="col">Timestamp</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+               
+                <div class="list-group-flush blist">
+                    <a href="http://www.codeleveling.com" target="_blank" class="list-group-item list-group-item-action">
+                       Visit my site!
+                    </a>
+                    
+                    <a href="#" class="list-group-item list-group-item-action">Github</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="/build.js"></script>
+    <script src="/spaceout.build.js"></script>
+    <script src="/1.build.js"></script>
+</body>
+
+
+
+</html>
