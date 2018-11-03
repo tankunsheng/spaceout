@@ -1,5 +1,5 @@
 # SpaceOut
-[SpaceOut](https://kunsheng-games.herokuapp.com/Pages/Game/Intro.html) is a simple 2d canvas game written in pure javascript (both the client and server). 
+<a href="https://kunsheng-games.herokuapp.com/Pages/Game/Intro.html" target="_blank">SpaceOut</a> is a simple 2d canvas game written in pure javascript (both the client and server). 
 
 It was my first brief attempt at trying out games development with pure vanilla javascript canvas api without any third party javascript library support for developing games such as Phaser.io for example.
 
